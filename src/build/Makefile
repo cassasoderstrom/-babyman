@@ -1,0 +1,2 @@
+default:
+	gcc ../main.c ../utilities.c ../collision.c ../game.c ../gameDraw.c ../score.c ../gameUtil.c ../achievements.c -o game.exe -Wall -I ../include/ -L ../lib/ -lraylib -lopengl32 -lgdi32 -lwinmm 
