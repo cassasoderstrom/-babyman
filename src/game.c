@@ -130,6 +130,8 @@ void Game(GameStruct g, Texture2D textures[25])
             }break;
             
             case ACHIEVEMENT:{
+                PlayMusicStream(menuMusic);
+                UpdateMusicStream(menuMusic);
                 if(IsMouseButtonPressed(0) && ((GetMouseX()>100 && GetMouseX()<500) && (GetMouseY() > 900 && GetMouseY() < 1000))){
                     currentScreen = MENU;
                 }
